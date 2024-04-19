@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ref.css">
+  
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header-section  -->
+    <div class="header-part flex text-white justify-space item-cen ">
+      <div class="logo-box">
+        <p>Portfolio</p>
+      </div>
+      <div class="nav-box ">
+
+        <ul class="text-style fl-gap flex">
+          <li><a class="text-white" href="#About">Home</a></li>
+          <li><a class="text-white" href="#project">Project</a></li>
+          <li><a class="text-white" href="#skill">Skill</a></li>
+          <li><a class="text-white" href="#Contact">Contact</a></li>
+        </ul>
+
+      </div>
+      <div onclick="showFun()" id="show" class="ham-img-box">
+        <img class="ham-img" src="img/ham.png" alt="">
+      </div>
+
+    </div>
+    <!-- Main-section  -->
+    <div class="main">
+      <div class="infocontainer">
+        <div class="dev-info show">
+          <div class="hello">Hello I am </div>
+          <div class="name">Anjali Jain</div>
+          <div class="text-3">And I'm a <span id="changeableWord"></span></div>
+          <div class="about"><b style="font-size: 70px;"> W</b>eb <b style="font-size: 70px;"> D</b><span
+              style="color: red;">eveloper</span></div>
+          <!-- <div class="moreabout"  </div> -->
+          <div class="morabout">I love to learn🧑‍💻 and explore my learnings something 
+            new every day</div>
+          <div class="button">
+            <button onclick="downloadCV()">Download Resume</button>
+          </div>
+
+        </div>
+        <div class="devpic">
+
+          <img src="img/profile.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- project section -->
+    <div class="project_sec ">
+      <h1 id="project">Project</h1>
+      <div class="flex justify-space">
+        <div class="box " id="box1">
+          <!-- <div class="box-part"></div> -->
+          <h1 class="title-proj">Netflix Clone</h1>
+          <p>
+            An immersive clone of Netflix designed specifically for web development enthusiasts, offering a curated
+            library of tutorials, coding challenges, and tech talks.
+          </p>
+          <button class="see-btn"><a href="https://github.com/AnjaliJain14/netflixclone">See</a> <svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:black;">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+            </svg> </button>
+        </div>
+        <div class="box " id="box2">
+          <div class="box-part"></div>
+          <h1 class="title-proj">SHEalth website</h1>
+          <p>Creating an interactive website for female adolescance health and hygiene. It helps female to learn about
+            themselves.
+            Incorporating rich multimedia elements such as photos, videos, and exercise to stay healthy.
+
+          </p>
+          <button class="see-btn"><a href="https://github.com/AnjaliJain14/SHEalth-project">see</a><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:black;">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+            </svg> </button>
+        </div>
+        <div class="box " id="box3">
+          <div class="box-part"></div>
+          <h1 class="title-proj">Temperature Converter</h1>
+          <p>Designing a classic tic-tac-toe game with a modern twist, offering both single-player and multiplayer modes
+            for versatile gameplay experiences.</p>
+          <button class="see-btn"><a href="https://github.com/AnjaliJain14/temperature_converter">see</a><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:black;">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+            </svg> </button>
+        </div>
+        <div class="box " id="box-1">
+          <div class="box-part"></div>
+          <h1 class="title-proj">Landing page</h1>
+          <p>
+            A sleek landing page for web development services, showcasing stunning design and intuitive navigation.
+            Captivating visuals, concise messaging, and clear call-to-action buttons guide visitors seamlessly through
+            the services offered. .</p>
+          <button class="see-btn"><a href="https://github.com/AnjaliJain14/landing_page">see</a> <svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:black;">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+            </svg> </button>
+        </div>
+        <!-- <div class="box " id="box-2">
+          <div class="box-part"></div>
+          <h1 class="title-proj">Clone of LinkedIn</h1>
+          <p>
+            A meticulously crafted clone of LinkedIn tailored for web development professionals, offering a familiar yet
+            enhanced user experience.</p>
+          <button class="see-btn"><a href="https://github.com/manshi-shukla/linkedIn_Clone.git">see</a> <svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:black;">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+            </svg> </button>
+        </div> -->
+        <div class="box " id="box-3">
+          <div class="box-part"></div>
+          <h1 class="title-proj">Mental Health</h1>
+          <p>
+            An immersive Mental Health website to promote mental health specifically for youthage, offering a platform
+            to grab concern about mental health. </p>
+          <button class="see-btn"><a href="https://github.com/AnjaliJain14/Mental_health">see</a> <svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:black;">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+            </svg> </button>
+        </div>
+      </div>
+      <button id="more-proj" onclick="project()" ondblclick="project1()">see more</button>
+    </div>
+
+    <!-- skill section -->
+    <div class="body-box skill_sec">
+      <h1 id="skill">My Skill</h1>
+      <div class="container-box  ">
+
+        <div class="progress" style="--i:85;--clr:#43f94a;">
+          <h3>80<span>%</span> </h3>
+          <h4>Html</h4>
+        </div>
+        <div class="progress" style="--i:55;--clr:#43f9cb;">
+          <h3>55<span>%</span> </h3>
+          <h4>CSS</h4>
+        </div>
+        <div class="progress less" style="--i:50;--clr:#80f943;">
+          <h3>50<span>%</span> </h3>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="progress less" style="--i:45;--clr:#439bf9;">
+          <h3>30<span>%</span> </h3>
+          <h4>Python</h4>
+        </div>
+        <div class="progress less" style="--i:350;--clr:#f9437d;">
+          <h3>45<span>%</span> </h3>
+          <h4>Django</h4>
+        </div>
+        <div class="progress less" style="--i:50;--clr:#e1f943;">
+          <h3>45<span>%</span> </h3>
+          <h4>MySql</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact section -->
+    <div class="Contact1">
+      <div class=" contact-part">
+        <form action="" onsubmit=" return validateForm()">
+          <a id="Contact" href="#">Contact</a>
+          <div>
+            <p>Contact Me</p>
+          </div>
+          <div class="flex1">
+
+            <div> <label for="Name">Name <span>*</span></label>
+              <input type="text" name="" id="Name" placeholder="Enter your name" required><br>
+              <span id="nameLabel" style="color: red;"></span>
+            </div>
+
+            <div><label for="email">Email <span>*</span></label>
+              <input type="email" name="" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+              <label for="number">Contact <span>*</span></label>
+              <input type="number" name="number" id="number" placeholder="xxx-xxx-xxxx" required>
+              <br> <span id="phoneErr" style="color: red;"></span>
+            </div>
+
+            <div class="flex2"> <label for="w3review">Message:</label></p>
+              <textarea id="w3review" name="w3review" rows="8" cols="66"
+                placeholder="Enter your text here..."> </textarea><br>
+            </div>
+
+            <button id="submit">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- footer-section  -->
+    <footer>
+      <div class="footer-part flex justify-space ">
+        <div class="contact-info m1 ">
+          <h3>Contact Information</h3>
+          <p>Email:abc@gmail.com</p>
+          <p>Phone:XXXXXXX733</p>
+        </div>
+
+        <div class="social-links m1">
+          <h3>Connect with me</h3>
+          <ul>
+            <li class="text-style"><a class="text-dec"
+                href="https://www.linkedin.com/in/anjali-jain-7750ab254">LinkedIn</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Anjali Jain. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</body>
+
+</html>
